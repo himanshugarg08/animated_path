@@ -32,7 +32,7 @@ class AnimatedPathDemo extends StatefulWidget {
 class _AnimatedPathDemoState extends State<AnimatedPathDemo> with SingleTickerProviderStateMixin {
   late final AnimationController animationController = AnimationController(
     vsync: this,
-    duration: const Duration(seconds: 12),
+    duration: const Duration(seconds: 7),
   );
 
   late final Animation<double> firstAnimation = CurvedAnimation(
