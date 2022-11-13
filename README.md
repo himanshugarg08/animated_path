@@ -13,7 +13,6 @@ A Flutter package that is used to create trim path animation on given path.
 ## Showcase
 
 <img src="https://github.com/himanshugarg08/animated_path/blob/main/gifs/1.gif?raw=true" width="500" align=top>
--
 <img src="https://github.com/himanshugarg08/animated_path/blob/main/gifs/2.gif?raw=true" width="500"> 
 
 ## Usage
