@@ -36,7 +36,7 @@ class AnimatedPath extends StatelessWidget {
   /// Provide initial and final value
   /// of [end] for the [path]
   ///
-  /// Values for [this] calculated based on tween provided
+  /// Values for [this] is calculated based on tween provided
   /// should always be greater than [start] at any point of time,
   /// or [path] will not be visible
   final Tween<double>? end;
