@@ -81,7 +81,8 @@ class AnimatedPath extends StatelessWidget {
 class _AnimatedPathPainter extends CustomPainter {
   final AnimatedPath animatedPath;
 
-  _AnimatedPathPainter(this.animatedPath) : super(repaint: animatedPath.animation);
+  _AnimatedPathPainter(this.animatedPath)
+      : super(repaint: animatedPath.animation);
 
   @override
   void paint(Canvas canvas, Size size) {
@@ -97,11 +98,13 @@ class _AnimatedPathPainter extends CustomPainter {
     for (var metric in animatedPath.path.computeMetrics()) {
       if (metric.length <= requiredLength) {
         if (requiredStartLength < metric.length) {
-          path.addPath(metric.extractPath(requiredStartLength, metric.length), Offset.zero);
+          path.addPath(metric.extractPath(requiredStartLength, metric.length),
+              Offset.zero);
         }
       } else {
         if (requiredStartLength < metric.length) {
-          path.addPath(metric.extractPath(requiredStartLength, requiredLength), Offset.zero);
+          path.addPath(metric.extractPath(requiredStartLength, requiredLength),
+              Offset.zero);
         }
       }
       requiredLength -= metric.length;
